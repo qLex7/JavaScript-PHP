@@ -1,0 +1,124 @@
+<!Doctype HTML>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" type="text/css" href="style.css">
+  </head>
+  <body>
+    <table>
+      <thead>
+        <tr>
+          <td colspan="3" align="middle">
+            <h1>Bienvenue</h1>
+            <form method=post action="traitement.php">
+              <input type="submit" value="Envoyer">
+                <input type="reset" value="Initialiser">
+          </td>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td width=25%>
+          </td>
+
+          <td width=65%>
+            <fieldset>
+              <legend>Zones de texte</legend>
+              <p>
+                <label for="Nom">Nom</label>
+                <input type="text" name="Nom" id="Nom" size=10 required>
+              </p>
+              <p>
+                <label for="Prénom">Prénom</label>
+                <input type="text" name="Prénom" id="Prénom" size=10 required>
+              </p>
+              <p>
+                <label for="Age">Age</label>
+                <input type="number" name="Age" id="Age" size=5 min=0 max=150 required>
+              </p>
+              <p>
+                <label for="mail">Adresse mail:</label>
+                <input type="email" name="mail" id="mail" size=25 placeholder="Nom.Prenom@hotmail.fr" required>
+              </p>
+              <p>
+                <label for="password">Mot de Passe:</label>
+                <input type="password" name="password" id="password" size=20 required>
+              </p>
+              <p>
+                <label for="password">Retapez votre mot de passe:</label>
+                <input type="password" name="password" id="password" size=20 required>
+              </p>
+              <p>
+                <label for="commentaires">Commentaires</label>
+
+                <textarea name="commentaires" id="commentaires" rows="2%" cols="25%"></textarea>
+              </p>
+            </fieldset>
+
+            <br>
+            <br>
+
+            <fieldset>
+              <legend>Choix multiples</legend>
+              <p> Sexe <br>
+                <label for="Homme">Homme:</label>
+                <input type="radio" name="genre">
+
+                <label for="Femmes">Femme:</label>
+                  <input type="radio" name="genre">
+              </p>
+
+              <p>Hobbies <br>
+                <input type="checkbox" name="cinéma">
+                <label for="Cinéma">Cinéma</label>
+
+                <input type="checkbox" name="equitation">
+                <label for="equitation">Equitation</label>
+
+                <input type="checkbox" name="planche à voile">
+                <label for="planche à voile">Planche à voile</label>
+
+                <input type="checkbox" name="musique">
+                <label for="musique">Musique</label>
+
+                <input type="checkbox" name="théâtre">
+                <label for="théâtre">Théâtre</label>
+
+                <input type="checkbox" name="rien">
+                <label for="rien">Rien</label>
+              </p>
+            </fieldset>
+
+            <br>
+            <br>
+
+            <fieldset>
+              <legend>Liste à choix multiples</legend>
+                <p>Profession
+                <select name="profession" id="profession" required>
+                  <option value="Professeur">Professeur</option>
+                  <option selected value="Etudiant">Etudiant</option>
+                  <option value="Chomeur">Chomeur</option>
+                  <option value="Ouvrier">Ouvrier</option>
+                  <option value="Président">Président</option>
+                </select>
+              </p>
+
+              <p>Moyens de transport utilisés
+
+                <select size=5 name="transport" id="transport" required>
+
+                  <option value="voiture">Voiture</option>
+                  <option value="train">Train</option>
+                  <option value="bus">Bus</option>
+                  <option value="vélo">Vélo</option>
+                  <option value="autre">Autre</option>
+                </select>
+              </p>
+            </fieldset>
+          </form>
+        </td>
+      </tr>
+    </tbody>
+  </body>
+</html>
