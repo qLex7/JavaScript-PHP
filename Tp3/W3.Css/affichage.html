@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Formulaire</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+</head>
+<body>
+
+      <div class="w3-container w3-card w3-display-topmiddle   w3-padding-16 w3-center" style="width:100%">
+        <div class="w3-text-red w3-border-bottom w3-border-red">
+        <h2><b>Formulaire de contact</b></h2>
+      </div>
+      <div class="w3-padding-16">
+      </div>
+
+
+      <form method=get action="formulaires.html">
+      <div class="w3-row">
+        <div class="w3-col w3-right-align" style="width:30%">
+          <p><b>Nom:</b></p>
+          <p><b>Prénom:</b></p>
+          <p><b>Courriel:</b></p>
+        </div>
+        <div class="w3-quarter">
+          <p></p>
+        </div>
+
+        <div class="w3-third" >
+          <input class="w3-input  w3-border " type="text"required>
+          <input class="w3-input w3-border" type="text"required>
+          <input class="w3-input w3-border" type="email"required>
+        </div>
+      </div>
+
+        <div class="w3-row">
+          <div class="w3-col w3-right-align" style="width:30%">
+            <p><b>Natures de la demande</b></p>
+        </div>
+        <div class="w3-col w3-left-align" style="width:15%">
+          <input class="w3-radio" type="radio" name="gender" value="renseignement" required><label><b>Renseignement</b></label>
+          <br>
+          <input class="w3-radio" type="radio" name="gender" value="Incident technique" required><label><b>Incident technique</b></label>
+          <br>
+          <input class="w3-radio" type="radio" name="gender" value="partenariat" required><label><b>Partenariat</b></label>
+      </div>
+    </div>
+
+    <div class="w3-row w3-padding-16">
+      <div class="w3-col w3-right-align"  style="width:30%">
+      <p><b>Message</b></p>
+      </div>
+      <div class="w3-col w3-right-align" style="width:50%">
+        <textarea class="w3-input w3-border" style="resize:none"  type="text"required></textarea>
+      </div>
+    </div>
+
+    <div class="w3-row">
+      <div class="w3-col w3-right-align w3-padding-16 w3-padding-large "style="width:31%">
+        <input class="w3-button w3-grey w3-round" type="reset" value="Annuler">
+      </div>
+      <div class="w3-col w3-right-align w3-padding-16"style="width:55%">
+        <input class="w3-button w3-grey w3-round" type="submit" value="Envoyez">
+      </div>
+    </div>
+
+    <div class="w3-row">
+      <div class="w3-quarter">
+        <p></p>
+      </div>
+      <div class="w3-third w3-left-align">
+        <p>Tous les champs du formulaire doivent être <b>impérativement</b> remplis.</p>
+      </div>
+    </div>
+
+    <div class="w3-row">
+      <div class="w3-quarter">
+        <p></p>
+      </div>
+      <div class="w3-third w3-left-align">
+        <p>Imprimez puis envoyez le formulaire par la poste à :<br>
+          Prof Atshoum<br>
+          44, rue du simplet<br>
+          84911 La Blanche-Neige France<br>
+          Ou par fax au 01 34 56 76 56</p>
+        </div>
+      </div>
+
+
+          </form>
+        </div>
+    </body>
+</html>

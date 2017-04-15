@@ -1,0 +1,67 @@
+<!Doctype HTML>
+<html>
+<head>
+  <meta charset="utf-8">
+  <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+  <body>
+    <table align="left" width="100%" border="0">
+
+          <tr align="center">
+            <th colspan="2">Formulaire de contact</th>
+            </tr>
+
+        <tbody>
+          <form method=get action="formulaires.html">
+
+            <tr>
+              <td align="left" width="30%" id="couleur">Nom :</td>
+              <td id="right"><input type="text" name="Nom" size=40 required></td>
+            </tr>
+
+            <tr>
+              <td align="left" width="30%" id="couleur">Prénom :</td>
+              <td id="right"><input type="text" name="Prenom"  size=40 required></td>
+            </tr>
+
+            <tr>
+              <td align="left" width="30%" id="couleur">Courriel :</td>
+              <td id="mail"><input type="email" name="mail" size=40 placeholder="" required></td>
+            </tr>
+
+            <tr>
+              <td  width="30%" id="couleur1">Natures de la demande </td>
+              <td align="left" id="gras"> <input type="radio" name="genre" required><label for="renseignement">Renseignement</label>
+                <br>
+                  <input type="radio" name="genre" required><label for="Incident technique">Incident technique</label>
+                  <br>
+                  <input type="radio" name="genre" required><label for="Partenariat">Partenariat</label> </td>
+            </tr>
+
+            <tr>
+              <td width="30%" id="couleur2">Message</td>
+              <td align="left" id="message"><textarea name="message"  rows="20%" cols="85%" required></textarea></td>
+            </tr>
+
+            <tr>
+              <td id="bouton" width="30%"><input type="reset" value="Annuler"></td>
+              <td id="bouton"><input type="submit" value="Envoyer"></td>
+            </tr>
+
+            <tr>
+              <td id="disparition" colspan="2">Tous les champs du formulaire doivent être <b>impérativement</b> remplis.</td>
+            </tr>
+
+            <tr>
+              <td id="disparition" colspan="2">Imprimez puis envoyez le formulaire par la poste à :<br>
+                Prof Atshoum<br>
+                44, rue du simplet<br>
+                84911 La Blanche-Neige France<br>
+                Ou par fax au 01 34 56 76 56</td>
+              </tr>
+
+              </form>
+            </tbody>
+          </table>
+        </body>
+    </html>
